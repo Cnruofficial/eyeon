@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EYEON | DATA SURVEILLANCE DASHBOARD</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <div class="logo-container">
+                <img src="https://i.postimg.cc/rpx21s7D/Transparent-logo-Eyeon.png" alt="EYEON Logo">
+                <div class="system-info">
+                    <h1>EYEON | DATA SURVEILLANCE SYSTEMS</h1>
+                    <p class="version">v4.8.3-BETA | HelixWatch Corporation</p>
+                </div>
+            </div>
+            <div class="user-info">
+                <span class="agent-id">INT-AGNT-XXXXX</span>
+                <span class="logout">TERMINATE SESSION</span>
+            </div>
+        </header>
+        
+        <nav class="data-nav">
+            <ul>
+                <li class="active" data-section="overview">SYSTEM OVERVIEW</li>
+                <li data-section="nodes">INTERPOL NODES</li>
+                <li data-section="entities">LEGAL ENTITIES</li>
+                <li data-section="streams">DATA STREAMS</li>
+                <li data-section="targets">MONITORING TARGETS</li>
+            </ul>
+            <div class="search-box">
+                <input type="text" placeholder="SEARCH DATABASE...">
+                <button>QUERY</button>
+            </div>
+        </nav>
+        
+        <main class="data-content" id="data-content">
+            <!-- Data will be loaded here from JSON -->
+        </main>
+        
+        <footer class="dashboard-footer">
+            <p>WARNING: All activities are monitored and recorded. Unauthorized data sharing violates international cyber laws.</p>
+            <p class="timestamp">LAST UPDATE: <span id="current-date"></span></p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
