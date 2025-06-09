@@ -3,47 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EYEON | DATA SURVEILLANCE DASHBOARD</title>
+    <title>EYEON | SECURE DATA DASHBOARD</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="security-grid">
+        <div class="grid-line"></div>
+        <div class="grid-line"></div>
+        <div class="grid-line"></div>
+    </div>
+    
     <div class="dashboard-container">
         <header class="dashboard-header">
             <div class="logo-container">
                 <img src="https://i.postimg.cc/rpx21s7D/Transparent-logo-Eyeon.png" alt="EYEON Logo">
                 <div class="system-info">
-                    <h1>EYEON | DATA SURVEILLANCE SYSTEMS</h1>
-                    <p class="version">v4.8.3-BETA | HelixWatch Corporation</p>
+                    <h1>EYEON | SECURE DATA SURVEILLANCE</h1>
+                    <div class="security-tag">
+                        <span>CLASSIFIED</span>
+                        <span>LEVEL 5 CLEARANCE REQUIRED</span>
+                    </div>
                 </div>
             </div>
             <div class="user-info">
-                <span class="agent-id">INT-AGNT-XXXXX</span>
-                <span class="logout">TERMINATE SESSION</span>
+                <div class="auth-status">
+                    <span class="secure-icon">🔒</span>
+                    <span>BIOMETRIC VERIFICATION ACTIVE</span>
+                </div>
+                <div class="session-timer">
+                    <span>SESSION TERMINATES IN: <span id="session-timer">14:59</span></span>
+                </div>
             </div>
         </header>
         
-        <nav class="data-nav">
-            <ul>
-                <li class="active" data-section="overview">SYSTEM OVERVIEW</li>
-                <li data-section="nodes">INTERPOL NODES</li>
-                <li data-section="entities">LEGAL ENTITIES</li>
-                <li data-section="streams">DATA STREAMS</li>
-                <li data-section="targets">MONITORING TARGETS</li>
-            </ul>
-            <div class="search-box">
-                <input type="text" placeholder="SEARCH DATABASE...">
-                <button>QUERY</button>
+        <div class="security-bar">
+            <div class="security-indicators">
+                <span>ENCRYPTION: AES-256</span>
+                <span>FIREWALL: ACTIVE</span>
+                <span>INTRUSION DETECTION: ENABLED</span>
             </div>
-        </nav>
+            <div class="security-alert-level">
+                THREAT LEVEL: <span class="threat-level">ELEVATED</span>
+            </div>
+        </div>
         
-        <main class="data-content" id="data-content">
-            <!-- Data will be loaded here from JSON -->
+        <main class="data-content">
+            <div class="data-warning">
+                <h3>SECURITY NOTICE</h3>
+                <p>All data access is logged and monitored. Unauthorized sharing of classified information violates International Cyber Security Laws and will result in immediate termination of access and legal prosecution.</p>
+                <p class="warning">THIS SYSTEM IS PROTECTED UNDER ARTICLE 17 OF THE GLOBAL CYBER SECURITY ACCORD</p>
+            </div>
+            
+            <div class="data-card">
+                <h3>RECENT SECURITY EVENTS</h3>
+                <div class="security-event">
+                    <span class="event-time">[10:42:03]</span>
+                    <span class="event-desc">User authentication successful</span>
+                    <span class="event-status secure">SECURE</span>
+                </div>
+                <div class="security-event">
+                    <span class="event-time">[10:42:15]</span>
+                    <span class="event-desc">Session encryption established</span>
+                    <span class="event-status secure">SECURE</span>
+                </div>
+                <div class="security-event">
+                    <span class="event-time">[10:42:22]</span>
+                    <span class="event-desc">Firewall integrity check passed</span>
+                    <span class="event-status secure">SECURE</span>
+                </div>
+                <div class="security-event">
+                    <span class="event-time">[10:43:01]</span>
+                    <span class="event-desc">3 intrusion attempts blocked</span>
+                    <span class="event-status warning">MONITORED</span>
+                </div>
+            </div>
+            
+            <div class="access-controls">
+                <button class="access-btn">REQUEST DATA ACCESS</button>
+                <button class="access-btn">INITIATE SECURE QUERY</button>
+                <button class="access-btn danger">TERMINATE SESSION</button>
+            </div>
         </main>
         
         <footer class="dashboard-footer">
-            <p>WARNING: All activities are monitored and recorded. Unauthorized data sharing violates international cyber laws.</p>
-            <p class="timestamp">LAST UPDATE: <span id="current-date"></span></p>
+            <p>EYEON Data Surveillance System v4.8.3-BETA | HelixWatch Corporation</p>
+            <p class="legal">All rights reserved. Unauthorized access prohibited. © 2023 International Data Security Consortium</p>
         </footer>
     </div>
     
