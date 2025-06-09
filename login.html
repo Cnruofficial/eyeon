@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EYEON | SECURE LOGIN</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo-header">
+            <img src="https://i.postimg.cc/rpx21s7D/Transparent-logo-Eyeon.png" alt="EYEON Logo" class="transparent-logo">
+        </div>
+        
+        <div class="login-form">
+            <h2>BIOMETRIC VERIFICATION REQUIRED</h2>
+            <div class="input-group">
+                <label for="agent-id">AGENT ID</label>
+                <input type="text" id="agent-id" placeholder="INT-AGNT-XXXXX">
+            </div>
+            <div class="input-group">
+                <label for="biometric">PALM SCAN</label>
+                <div class="biometric-scan" id="biometric-scan">
+                    <div class="scan-animation"></div>
+                </div>
+            </div>
+            <button id="verify-btn">INITIATE SCAN</button>
+            <div class="legal-notice">
+                <p>NOTICE: Unauthorized access will be logged and reported to INTERPOL Cyber Division</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
