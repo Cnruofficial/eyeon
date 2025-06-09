@@ -3,25 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EYEON | DATA SURVEILLANCE SYSTEMS</title>
+    <title>EYEON | SECURE DATA PORTAL</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="security-overlay">
+        <div class="security-line"></div>
+        <div class="security-line"></div>
+        <div class="security-line"></div>
+    </div>
+    
     <div class="login-container">
         <div class="logo-animation">
             <img src="https://i.postimg.cc/zBNZ0510/Logo-Eyeon.jpg" alt="EYEON Logo" id="main-logo">
-            <div id="access-code-display"></div>
+            <div class="security-badge">
+                <span>PROTECTED BY HELIXWATCH SECURITY</span>
+                <span>MULTI-FACTOR AUTHENTICATION REQUIRED</span>
+            </div>
         </div>
         
         <div class="login-form" id="login-form">
-            <h2>SECURE ACCESS PORTAL</h2>
-            <div class="input-group">
-                <label for="access-code">ENTER ACCESS CODE</label>
-                <input type="password" id="access-code" placeholder="•••••">
+            <div class="security-header">
+                <h2>SECURE ACCESS PORTAL</h2>
+                <div class="encryption-status">
+                    <span class="secure-icon">🔒</span>
+                    <span>END-TO-END ENCRYPTION ACTIVE</span>
+                </div>
             </div>
-            <button id="login-btn">AUTHENTICATE</button>
-            <div class="status-message" id="status-message"></div>
+            
+            <div class="input-group">
+                <label for="access-code">ENTER SECURITY CREDENTIALS</label>
+                <div class="secure-input">
+                    <input type="password" id="access-code" placeholder="••••••••••••">
+                    <span class="security-indicator">AES-256</span>
+                </div>
+            </div>
+            
+            <div class="security-checks">
+                <div class="check-item">
+                    <input type="checkbox" id="terms-check">
+                    <label for="terms-check">I acknowledge unauthorized access is punishable under International Cyber Law</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="biometric-check">
+                    <label for="biometric-check">I consent to biometric verification</label>
+                </div>
+            </div>
+            
+            <button id="login-btn">INITIATE SECURE AUTHENTICATION</button>
+            
+            <div class="security-footer">
+                <p>This system is protected by advanced security protocols. All activities are monitored.</p>
+                <p class="warning">UNAUTHORIZED ACCESS ATTEMPTS WILL BE REPORTED TO INTERPOL CYBER DIVISION</p>
+            </div>
         </div>
     </div>
 
