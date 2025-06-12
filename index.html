@@ -2,82 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>EYEON | SECURE ACCESS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EYEON DATA SURVEILLANCE SYSTEMS</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://i.postimg.cc/rpx21s7D/Transparent-logo-Eyeon.png">
+    <meta name="description" content="Advanced data surveillance and security analysis">
+    <meta name="keywords" content="data surveillance, security, monitoring, eyeon">
 </head>
 <body>
-    <div class="security-grid"></div>
-    <div class="scanlines"></div>
-    <div class="noise"></div>
-    
-    <div class="terminal-container">
-        <div class="terminal-header">
-            <div class="logo-wrapper">
-                <img src="https://i.postimg.cc/zBNZ0510/Logo-Eyeon.jpg" alt="EYEON" class="main-logo">
-                <div class="logo-glitch"></div>
-            </div>
-            <div class="terminal-title">
-                <h1>SECURE TERMINAL ACCESS</h1>
-                <div class="status-bar">
-                    <span class="status encrypted">ENCRYPTED</span>
-                    <span class="status protocol">PROTOCOL v4.8.3</span>
-                    <span class="status threat">THREAT LEVEL: <span class="blink">HIGH</span></span>
-                </div>
-            </div>
+    <header>
+        <div class="logo-container">
+            <img src="https://i.postimg.cc/rpx21s7D/Transparent-logo-Eyeon.png" alt="EYEON Logo" class="logo">
         </div>
-        
-        <div class="terminal-body">
-            <div class="command-line">
-                <span class="prompt">root@eyeon:~$</span>
-                <span class="typing" id="typing-text"></span>
-                <span class="cursor">|</span>
-            </div>
-            
-            <div class="login-form" id="login-form">
-                <div class="input-group">
-                    <label for="agent-id">AGENT ID:</label>
-                    <input type="text" id="agent-id" placeholder="INT-AGNT-XXXXX" class="terminal-input">
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="news.html">Security News</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="data-section">
+            <h2>Data Surveillance Dashboard</h2>
+            <div class="data-grid">
+                <div class="data-card editable">
+                    <h3>System Status</h3>
+                    <p class="data-content">Active</p>
                 </div>
-                <div class="input-group">
-                    <label for="access-code">ENCRYPTION KEY:</label>
-                    <div class="password-wrapper">
-                        <input type="password" id="access-code" placeholder="············" class="terminal-input">
-                        <span class="security-level">AES-256</span>
-                    </div>
+                <div class="data-card editable">
+                    <h3>Last Scan</h3>
+                    <p class="data-content">2023-11-15 14:30:22</p>
                 </div>
-                <div class="security-checks">
-                    <div class="check-item">
-                        <input type="checkbox" id="terms-check" class="terminal-checkbox">
-                        <label for="terms-check">ACKNOWLEDGE GLOBAL CYBER LAW</label>
-                    </div>
-                    <div class="check-item">
-                        <input type="checkbox" id="biometric-check" class="terminal-checkbox">
-                        <label for="biometric-check">ENABLE BIOMETRIC SCAN</label>
-                    </div>
+                <div class="data-card editable">
+                    <h3>Threat Level</h3>
+                    <p class="data-content">Low</p>
                 </div>
-                <button id="login-btn" class="terminal-btn">INITIATE ACCESS</button>
+                <div class="data-card editable">
+                    <h3>User Access</h3>
+                    <p class="data-content">Admin</p>
+                </div>
             </div>
-            
-            <div class="hack-animation" id="hack-animation"></div>
-        </div>
-        
-        <div class="terminal-footer">
-            <div class="connection-status">
-                <span class="blink">CONNECTING TO MAINFRAME...</span>
-                <span class="ip-address">192.168.1.105:8080</span>
-            </div>
-            <div class="legal-warning">
-                UNAUTHORIZED ACCESS WILL BE PROSECUTED UNDER INTERNATIONAL CYBER SECURITY LAW
-            </div>
-        </div>
-    </div>
-    
-    <audio id="typing-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-modern-click-box-check-1120.mp3"></audio>
-    <audio id="access-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-security-protected-zone-alarm-904.mp3"></audio>
-    <audio id="success-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-unlock-game-notification-253.mp3"></audio>
-    
+        </section>
+
+        <section class="quick-actions">
+            <button id="scan-btn">Initiate Scan</button>
+            <button id="export-btn">Export Data</button>
+            <button id="settings-btn">Settings</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 EYEON DATA SURVEILLANCE SYSTEMS. All rights reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
